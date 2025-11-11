@@ -1,0 +1,8 @@
+@media (max-width:1024px) {
+    .hero-left{
+    aspect-ratio: 760/1019;
+    }
+    .hero-title h1{
+        font-size: 40px;
+    }
+}

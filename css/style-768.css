@@ -1,0 +1,14 @@
+@media (max-width:768px) {
+    .hero-left{
+        aspect-ratio: 393/703;
+        width: 100%;
+    }
+    .hero-title{
+        text-align: left;
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+    .hero-title h1{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,59 @@
+.bg-vi{
+    width: 100%;
+    height: calc(100vh);
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+} 
+.bg-vi video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero{
+    position: relative;
+}
+.hero-left{
+    background: url("../img/hero.jpg") no-repeat 50% 50% / cover;
+    height: 100vh;
+    aspect-ratio: 1425/1020;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.hero-left .sub-title{
+    margin-top: 200px;
+}
+.hero-title{
+    text-align: left;
+    margin-right: 1rem;
+}
+.hero-title h1{
+    font-size: 46px;
+    line-height: 90%;
+    margin-top: 0.5rem;
+}
+.bottom-title{
+    margin-top: 180px;
+    text-align: right;
+    margin-right: 1rem;
+}
+.deco1 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    border-left: 2px solid #fff;
+    color: #fff;
+    width: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+.deco1 div {
+    transform: rotate(90deg);
+    margin-bottom: 110px;
+    white-space: nowrap;
+    margin-left: -47px;
+}
