@@ -11,23 +11,30 @@
     <link rel="stylesheet" href="./css/style-1920.css">
     <link rel="stylesheet" href="./css/style-1200.css">
     <link rel="stylesheet" href="./css/style-768.css">
+    <link rel="stylesheet" href="./css/interaction.css">
+    <!-- 파비콘 -->
+    <link rel="icon" sizes="32x32" href="./img/profile-fabicon.png" type="image/png">
 
     <!-- 폰트 -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="./js/bbyong.js"></script>
+    <script src="./js/observer.js"></script>
 </head>
 <body>
-    <div class="deco1">
-        <div>
-            <span>Keep scrolling</span>
+    <main>
+        <div class="deco1">
+            <div class="txt-r">
+                <span>Keep scrolling</span>
+            </div>
         </div>
-    </div>
-    <div class="bg-vi">
-        <video src="./img/backgrond.mp4" autoplay muted loop playsinline></video>
-    </div>
-    <div class="hero">
-        <div class="hero-left">
+        <div class="bg-vi">
+            <video src="./img/backgrond.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="hero">
             <div class="hero-title">
                 <p class="sub-title">웹 퍼블리셔 김혜빈</p>
                 <h1 class="fnc">Code that understands flow,<br>
@@ -35,9 +42,40 @@
             </div>
             <p class="bottom-title">흐름을 이해하는 코드, 경험을 만드는 손끝</p>
             <figure>
-                <img src="./img/" alt="">
+                <img src="./img/webpublisher_txt.svg" alt="webpublisher">
             </figure>
         </div>
-    </div>
+        <div class="about-me">
+            <div class="common-frame about">
+                <div class="abot-title">
+                    <p>디자인과 개발, 그 사이를 잇는 웹 퍼블리셔 김혜빈입니다.</p>
+                    <h1 class="fnc">Connecting Visuals and Code with Collaboration.</h1>
+                </div>
+                <div class="about-txt">
+                    <div class="txt1 ltr">
+                        <h3>Design in Balance</h3>
+                        <p>아무리 화려한 웹이라도 기본이 단단하지 않으면 오래 남지 않습니다.<br>균형, 여백, 타이포그래피 같은 디자인의 기본 원리를 지키며, 사용자가 편안하게 느끼는 화면을 만듭니다.<br>디자인의 기초 위에 정제된 코드가 더해질 때, 진짜 웹페이자가 된다고 생각합니다.</p>
+                    </div>
+                    <div class="txt2 ltr">
+                        <h3>Together</h3>
+                        <p>웹은 혼자 만드는 것이 아니라, 함께 완성되는 결과라고 생각합니다.<br>팀원들과의 원활한 소통 속에서 아이디어를 시각화하고, 더 나은 방향을 찾아가는 과정을 중요하게 여깁니다.<br>서로의 강점을 연결해 완성도를 높이는 협업이 제가 추구하는 일하는 방식입니다.</p>
+                    </div>
+                    <div class="txt3 ltr">
+                        <h3>Next</h3>
+                        <p>새로운 일을 앞두면 두려움이 먼저 오지만, 그 두려움이 저를 멈추게 하진 않습니다.<br>완벽을 바라는 대신, 과정 속의 시행착오를 통해 조금씩 성장해갑니다<br>작은 시도와 변화가 쌓여 결국 더 나은 저를 만들어줍니다.</p>
+                    </div>
+                </div>
+                <figure class="ltr">
+                    <img src="./img/profile-img.jpg" alt="웹 퍼블리셔 김혜빈의 이미지">
+                </figure>
+                <div class="ch">
+                    <p class="ch-count">01</p>
+                    <div class="ch-txt">
+                        <span class="body2">about me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

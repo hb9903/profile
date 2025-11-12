@@ -12,23 +12,23 @@
     height: 100%;
     object-fit: cover;
 }
-.hero{
-    position: relative;
-}
-.hero-left{
-    background: url("../img/hero.jpg") no-repeat 50% 50% / cover;
-    height: 100vh;
-    aspect-ratio: 1425/1020;
+.hero {
+    /* background: url("../img/hero.jpg") no-repeat 50% 50% / cover; */
+    background-color: #F2F2F2;
+    height: 120vh;
+    width: 70vw;
+    /* aspect-ratio: 1425/1020; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
 }
-.hero-left .sub-title{
+.hero .sub-title{
     margin-top: 200px;
 }
 .hero-title{
     text-align: left;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 .hero-title h1{
     font-size: 46px;
@@ -38,11 +38,23 @@
 .bottom-title{
     margin-top: 180px;
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    width: 100%;
+}
+.hero figure {
+    width: 800px;
+    position: absolute;
+    bottom: 200px;
+    left: -6%;
+}
+.hero figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .deco1 {
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 3%;
     border-left: 2px solid #fff;
@@ -50,10 +62,70 @@
     width: 70px;
     display: flex;
     align-items: flex-end;
+    z-index: 200;
 }
-.deco1 div {
+.txt-r {
     transform: rotate(90deg);
     margin-bottom: 110px;
     white-space: nowrap;
     margin-left: -47px;
+}
+.about-me{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+.abot-title{
+    padding-top: 6rem;
+}
+.about-title h1{
+    font-size: 40px;
+    margin-top: 0.25rem;
+}
+.about-txt{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.about-txt h3{
+    margin-bottom: 1rem;
+}
+.txt1{
+    margin-left: 304px;
+}
+.txt2{
+    margin-left: 607px;
+}
+.txt3{
+    margin-left: 910px;
+}
+.about figure {
+    width: 433px;
+    aspect-ratio: 433/592;
+    position: absolute;
+    top: 84%;
+    left: 4%;
+}
+.about figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ch {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.ch-count{
+    font-size: 1.5rem;
+    font-weight: var(--weight1);
+    margin-bottom: 0.5rem;
+}
+.ch-txt{
+    transform: rotate(90deg);
+    white-space: nowrap;
 }

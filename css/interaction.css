@@ -1,0 +1,9 @@
+.ltr{
+    transform: translateX(-20px);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+.ltr.on{
+    transform: translateX(0);
+    opacity: 1;
+}

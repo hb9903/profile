@@ -1,14 +1,28 @@
-@media (max-width:768px) {
-    .hero-left{
-        aspect-ratio: 393/703;
-        width: 100%;
+@media (max-width:786px) {
+    .hero{
+        width: 100vw;
+        height: 70vh;
     }
     .hero-title{
         text-align: left;
-        margin-right: 0;
+        margin-right: 1rem;
+        /* margin-left: 1rem; */
         margin-left: 1rem;
     }
     .hero-title h1{
         font-size: 30px;
+    }
+    .hero .sub-title {
+        margin-top: 120px;
+    }
+    .deco1{
+        display: none;
+    }
+    .bottom-title{
+        margin-right: 1rem;
+        margin-top: 80px;
+    }
+    .hero figure {
+        width: 100%;
     }
 }

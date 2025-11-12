@@ -11,6 +11,12 @@
     --lnh120: 1.2;
     --lnh140: 1.5;
 }
+@media (max-width:1920px){
+    main{
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
 .fnc{
     font-family: "News Cycle", sans-serif;
 }
@@ -38,7 +44,7 @@ html{
     width: auto;
     margin: 0 3rem;
 }
-@media (max-width:1024px) {
+@media (max-width:1440px) {
     html{
         font-size: 18px;
     }
@@ -48,7 +54,7 @@ html{
 }
 @media (max-width:768px) {
     html{
-    font-size: 14px;
+        font-size: 14px;
     }
     .common-frame{
         margin: 0 1rem;
