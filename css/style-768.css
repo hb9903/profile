@@ -25,4 +25,34 @@
     .hero figure {
         width: 100%;
     }
+    .about-txt-wrap{
+    flex: 6;
+}
+.about-txt{
+    width: 100%;
+}
+    .ch{
+        flex:1;
+        top: 0%;
+    }
+    .txt1{
+    margin-left: 0;
+    }
+    .txt2{
+        margin-left: 0;
+    }
+    .txt3{
+        margin-left: 0;
+    }
+    .about-title h1 {
+    font-size: 25px;
+    }
+    .about figure {
+        width: 365px;
+        /* top: 71%;
+        left: 0%; */
+        position: static;
+        margin-top: 3rem;
+    }
+
 }

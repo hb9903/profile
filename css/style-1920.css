@@ -13,11 +13,9 @@
     object-fit: cover;
 }
 .hero {
-    /* background: url("../img/hero.jpg") no-repeat 50% 50% / cover; */
     background-color: #F2F2F2;
     height: 120vh;
     width: 70vw;
-    /* aspect-ratio: 1425/1020; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -56,7 +54,7 @@
     height: 100%;
     position: fixed;
     top: 0;
-    right: 3%;
+    right: 1%;
     border-left: 2px solid #fff;
     color: #fff;
     width: 70px;
@@ -73,9 +71,14 @@
 .about-me{
     background-color: #000;
     color: #fff;
-    position: relative;
+    min-height: 500px;
 }
-.abot-title{
+.about{
+    position: relative;
+    min-height: 100vw;
+    display: flex;
+}
+.about-title{
     padding-top: 6rem;
 }
 .about-title h1{
@@ -104,7 +107,7 @@
     width: 433px;
     aspect-ratio: 433/592;
     position: absolute;
-    top: 84%;
+    top: 45%;
     left: 4%;
 }
 .about figure img{
@@ -112,13 +115,25 @@
     height: 100%;
     object-fit: cover;
 }
+.about-txt-wrap{
+    flex: 95;
+}
 .ch {
-    position: absolute;
+    position: sticky;
+    height: 100%;
     top: 50%;
-    right: 7%;
+    transform: translateY(-50%);
+    /* float: right; */
     color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 3rem;
+    z-index: 100;
+    flex: 5;
+    white-space: nowrap;
+    /* padding-top: 14%; */
 }
 .ch-count{
     font-size: 1.5rem;
@@ -126,6 +141,6 @@
     margin-bottom: 0.5rem;
 }
 .ch-txt{
-    transform: rotate(90deg);
-    white-space: nowrap;
+    writing-mode: vertical-lr;
+    transform: rotate(0deg);
 }

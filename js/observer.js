@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 1 // 태그가 화면에 10% 이상 보일 때
+        threshold: 0.1 // 태그가 화면에 10% 이상 보일 때
     });
 
     // .ltr 클래스를 가진 모든 요소 감시 시작

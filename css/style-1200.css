@@ -8,4 +8,25 @@
     .hero figure {
         width: 550px;
     }
+    .txt1{
+    margin-left: 0;
+    }
+    .txt2{
+        margin-left: 80px;
+    }
+    .txt3{
+        margin-left: 160px;
+    }
+    .about-txt{
+
+    }
+    .about-title h1 {
+    font-size: 35px;
+    margin-top: 0.25rem;
+    }
+    .about figure {
+        width: 301px;
+        top: 71%;
+        left: 0%;
+    }
 }
