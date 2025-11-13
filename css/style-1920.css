@@ -74,6 +74,7 @@
     color: #fff;
     min-height: 500px;
     width: 100%;
+    padding-bottom: 200px;
 }
 .about{
     position: relative;
@@ -118,7 +119,7 @@
     max-width: 433px;
     aspect-ratio: 433/592;
     position: absolute;
-    top: 45%;
+    top: 800px;
     left: 0;
 }
 .about figure img{
@@ -157,7 +158,7 @@
 }
 .img-txt{
     margin-left: 40%;
-    margin-top: 15%;
+    margin-top: 14%;
 }
 .img-txt h2{
     margin-bottom: 0.5rem;
@@ -177,7 +178,66 @@
     width: 130px;
     font-weight: var(--weight1);
 }
-.education{
+.education, .certifications {
     display: flex;
+    align-items: center;
     margin-top: 200px;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.education hr {
+    flex: 2;
+    margin-top: 15px;
+}
+.education-wrap h3,
+.certifications-wrap h3{
+    margin-bottom: 1rem;
+    white-space: nowrap; /* 제목이 줄바꿈 안 되게 */
+}
+.education-wrap{
+    flex: 9;
+}
+.education-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.education-wrap span{
+    display: inline-block;
+    width: 283px;
+    margin-right: 1rem;
+}
+.education-wrap ul li,
+.certifications-wrap ul li{
+    margin-top: 0.5rem;
+}
+.education-wrap ul li br{
+    display: none;
+}
+.certifications hr {
+    flex: 3;
+    margin-top: 15px;
+}
+.certifications-wrap{
+    flex: 5;
+}
+.certifications-wrap ul li{
+    width: 100%;
+    display: flex;
+    max-width: 889px;
+}
+.certifications-wrap span{
+    display: inline-block;
+    width: 132px;
+    margin-right: 1rem;
+    flex-shrink: 0;/
+}
+.certifications-wrap ul li div{
+    flex: 3;
+}
+.certifications-wrap ul li em{
+    font-style: inherit;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    flex: 1;
 }
