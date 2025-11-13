@@ -1,6 +1,6 @@
 .bg-vi{
     width: 100%;
-    height: calc(100vh);
+    height: 100%;
     overflow: hidden;
     position: fixed;
     right: 0;
@@ -15,11 +15,13 @@
 .hero {
     background-color: #F2F2F2;
     height: 120vh;
-    width: 70vw;
+    width: 100%; /* 70vw에서 100%로 변경 */
+    max-width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
 }
 .hero .sub-title{
     margin-top: 200px;
@@ -54,10 +56,9 @@
     height: 100%;
     position: fixed;
     top: 0;
-    right: 1%;
+    right: 0;
     border-left: 2px solid #fff;
     color: #fff;
-    width: 70px;
     display: flex;
     align-items: flex-end;
     z-index: 200;
@@ -72,6 +73,7 @@
     background-color: #000;
     color: #fff;
     min-height: 500px;
+    width: 100%;
 }
 .about{
     position: relative;
@@ -94,7 +96,7 @@
 .about-txt h3{
     margin-bottom: 1rem;
 }
-.txt1{
+/* .txt1{
     margin-left: 304px;
 }
 .txt2{
@@ -102,13 +104,22 @@
 }
 .txt3{
     margin-left: 910px;
+} */
+ .txt1{
+    margin-left: 20%;
+}
+.txt2{
+    margin-left: 40%;
+}
+.txt3{
+    margin-left: 60%;
 }
 .about figure {
-    width: 433px;
+    max-width: 433px;
     aspect-ratio: 433/592;
     position: absolute;
     top: 45%;
-    left: 4%;
+    left: 0;
 }
 .about figure img{
     width: 100%;
@@ -116,22 +127,22 @@
     object-fit: cover;
 }
 .about-txt-wrap{
-    flex: 95;
+    flex: 85;
 }
 .ch {
+    flex: 7;
     position: sticky;
-    height: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100vh;
+    top:0;
+    /* transform: translateY(-50%); */
     /* float: right; */
     color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    margin-right: 3rem;
+    /* margin-right: 1.5rem; */
     z-index: 100;
-    flex: 5;
     white-space: nowrap;
     /* padding-top: 14%; */
 }
@@ -143,4 +154,30 @@
 .ch-txt{
     writing-mode: vertical-lr;
     transform: rotate(0deg);
+}
+.img-txt{
+    margin-left: 40%;
+    margin-top: 15%;
+}
+.img-txt h2{
+    margin-bottom: 0.5rem;
+}
+.my-info {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.my-info div{
+    display:  flex;
+    gap: 1rem;
+    width: 100%;
+}
+.my-info dt{
+    width: 130px;
+    font-weight: var(--weight1);
+}
+.education{
+    display: flex;
+    margin-top: 200px;
 }

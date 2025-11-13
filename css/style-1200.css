@@ -1,4 +1,4 @@
-@media (max-width:1440px) {
+@media (max-width:1024px) {
     .hero-title h1{
         font-size: 40px;
     }
@@ -9,7 +9,7 @@
         width: 550px;
     }
     .txt1{
-    margin-left: 0;
+        margin-left: 0;
     }
     .txt2{
         margin-left: 80px;
@@ -17,16 +17,23 @@
     .txt3{
         margin-left: 160px;
     }
-    .about-txt{
-
+    .about-txt-wrap{
+        flex: 7;
+    }
+    .ch{
+        flex:1;
     }
     .about-title h1 {
-    font-size: 35px;
-    margin-top: 0.25rem;
+        font-size: 35px;
+        margin-top: 0.25rem;
     }
     .about figure {
-        width: 301px;
-        top: 71%;
+        max-width: 301px;
+        top: 60%;
         left: 0%;
+    }
+    .img-txt {
+        margin-left: 40%;
+        margin-top: 20%;
     }
 }

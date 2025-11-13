@@ -13,7 +13,7 @@
 }
 @media (max-width:1920px){
     main{
-        width: 1920px;
+        max-width: 1920px;
         margin: 0 auto;
     }
 }
@@ -38,13 +38,13 @@ h4{
 }
 html{
     font-size: 20px;
-    font-family: 'MaruBuri', sans-serif;
+    font-family: 'Pretendard', sans-serif;
 }
 .common-frame{
     width: auto;
     margin: 0 3rem;
 }
-@media (max-width:1440px) {
+@media (max-width:1024px) {
     html{
         font-size: 18px;
     }
