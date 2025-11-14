@@ -34,4 +34,7 @@
         margin-left: 40%;
         margin-top: 20%;
     }
+    .swiper-wrapper {
+    gap: 3rem;
+}
 }

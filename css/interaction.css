@@ -7,3 +7,12 @@
     transform: translateX(0);
     opacity: 1;
 }
+.btr{
+    transform: translateY(20px);
+    transition: all 2s ease 0s;
+    opacity: 0;
+}
+.btr.on{
+    transform: translateY(0);
+    opacity: 1;
+}

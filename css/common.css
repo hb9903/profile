@@ -9,16 +9,16 @@
     --weight1: 700;
     --weight2: 400;
     --lnh120: 1.2;
-    --lnh140: 1.5;
+    --lnh150: 1.5;
 }
-@media (max-width:1920px){
+@media (max-width:2000px){
     main{
         max-width: 1920px;
         margin: 0 auto;
     }
 }
 .fnc{
-    font-family: "News Cycle", sans-serif;
+    font-family: 'MaruBuri', sans-serif;
 }
 h1{
     font-size: var(--heading1);
@@ -35,6 +35,9 @@ h3{
 h4{
     font-size: var(--heading4);
     font-weight: var(--weight1);
+}
+p{
+    line-height: var(--lnh150);
 }
 html{
     font-size: 20px;

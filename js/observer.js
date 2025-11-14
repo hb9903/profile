@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // .ltr 클래스를 가진 모든 요소 감시 시작
-    document.querySelectorAll(".ltr").forEach(tag => observer.observe(tag));
+    document.querySelectorAll(".ltr, .btr").forEach(tag => observer.observe(tag));
     
 });

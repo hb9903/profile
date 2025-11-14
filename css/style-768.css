@@ -26,7 +26,7 @@
         width: 100%;
     }
     .about-txt-wrap{
-        flex: 6;
+        flex: 4;
     }
     .about-txt{
         width: 100%;
@@ -63,11 +63,11 @@
     }
     .education hr{
         flex: 0.5;
-        margin-top: 9px;
+        margin-top: 10px;
     }
     .certifications hr {
         flex: 0.3;
-        margin-top: 9px;
+        margin-top: 10px;
     }
     .education-wrap ul li{
         display:  flex; 
@@ -76,6 +76,7 @@
         display: inline-block;
         width: 66px;
         margin-right: 1rem;
+        white-space: nowrap;
     }
     .certifications-wrap ul li {
         flex-direction: column;
@@ -85,5 +86,43 @@
         margin-left: 0;
         font-size: 0.9rem;
         margin-top: 0.5rem;
+    }
+    .education, .certifications {
+        margin-top: 10rem;
+    }
+    .skills {
+        margin-top: 10rem;
+    }
+    .skills-wrap ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills-wrap ul li {
+        padding: 1rem;
+    }
+    .skills-wrap ul li h4 {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width:450px){
+    .skills-wrap ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:320px){
+    .hero figure {
+        bottom: 70px;
+    }
+    .about-txt-wrap {
+        flex: 3;
+    }
+    .certifications-wrap ul li div {
+        display: flex;
+        flex-direction: column;
+    }
+    .my-info dt {
+        width: 80px;
+    }
+    .skills-wrap ul li h4 {
+        margin-bottom: 2rem;
     }
 }
