@@ -34,7 +34,13 @@
         margin-left: 40%;
         margin-top: 20%;
     }
-    .swiper-wrapper {
-    gap: 3rem;
-}
+    .education::before {
+        flex: 1;
+    }
+    .certifications::before {
+        flex: 2;
+    }
+    .popup-wrap {
+    flex: 7;
+    }
 }

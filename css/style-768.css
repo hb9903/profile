@@ -15,6 +15,9 @@
     .hero .sub-title {
         margin-top: 120px;
     }
+    .hero figure {
+        bottom: 55px;
+    }
     .deco1{
         display: none;
     }
@@ -101,6 +104,35 @@
     }
     .skills-wrap ul li h4 {
         margin-bottom: 2rem;
+    }
+    .popup {
+        margin-left: 0;
+        margin-top: 10%;
+        padding: 6rem 1rem 6rem 1rem;
+    }
+    .popup .popup-wrap{
+        max-width: 95%;
+    }
+    .education::before {
+        flex: none;
+        width: 20px;
+    }
+    .popup-slide-wrap h3 {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .slide2{
+        margin-top: 0;
+    }
+    .slide3{
+        margin-top: 0;
+    }
+    .certifications::before {
+        flex: none;
+        width: 20px;
+    }
+    .ch2{
+        height: auto;
     }
 }
 @media (max-width:450px){

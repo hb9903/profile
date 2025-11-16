@@ -94,7 +94,6 @@
                     </div>
 
                     <div class="education ltr">
-                        <hr>
                         <div class="education-wrap">
                             <h3 class="fnc">Education</h3>
                             <ul>
@@ -116,7 +115,6 @@
                     </div>
 
                     <div class="certifications ltr">
-                        <hr>
                         <div class="certifications-wrap">
                             <h3 class="fnc">Certifications</h3>
                             <ul>
@@ -265,7 +263,6 @@
                 <div class="swiper popup-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">01</h3>
                                 <h4>여름 한정 세일 이벤트 팝업</h4>
@@ -276,7 +273,6 @@
                             </div>
                         </div>
                         <div class="swiper-slide slide2">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">02</h3>
                                 <h4>크리스마스 이벤트 팝업</h4>
@@ -287,7 +283,6 @@
                             </div>
                         </div> 
                         <div class="swiper-slide slide3">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">03</h3>
                                 <h4>BLACK FRIDAY 할인 팝업</h4>
@@ -298,7 +293,6 @@
                             </div>
                         </div> 
                         <div class="swiper-slide slide1">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">04</h3>
                                 <h4>BLACK FRIDAY 할인 팝업</h4>
@@ -309,7 +303,6 @@
                             </div>
                         </div> 
                         <div class="swiper-slide slide2">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">05</h3>
                                 <h4>나이키 오프라인 할인 팝업</h4>
@@ -320,7 +313,6 @@
                             </div>
                         </div> 
                         <div class="swiper-slide slide3">
-                            <hr>
                             <div class="popup-slide-wrap">
                                 <h3 class="fnc">06</h3>
                                 <h4>에스티 로더 리뷰 이벤트 팝업</h4>
@@ -343,14 +335,40 @@
         </div>
         <script>
             var swiper = new Swiper(".popup-slide", {
-            slidesPerView: 3.2,
+            slidesPerView: 2.5,
             spaceBetween: 120,
             freeMode: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            });
+            breakpoints: {
+                200: {
+                slidesPerView: 1.1,
+                spaceBetween: 7
+                },
+            // 화면이 320px 이상일 때
+            320: {
+                slidesPerView: 1.6,
+                spaceBetween: 14
+            },
+            // 화면이 768px 이상일 때
+            768: {
+                slidesPerView: 2.2,
+                spaceBetween: 36
+            },
+            // 화면이 1024px 이상일 때
+            1024: {
+                slidesPerView: 2.7,
+                spaceBetween: 50
+            },
+            // 화면이 1440px 이상일 때
+            1440: {
+                slidesPerView: 2.5,
+                spaceBetween: 100
+            }
+            }
+        });
         </script>
     </main>
 </body>
