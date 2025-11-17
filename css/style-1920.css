@@ -57,8 +57,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    border-left: 2px solid #fff;
-    color: #fff;
+    border-left: 2px solid #FCFDF9;
+    color: #FCFDF9;
     display: flex;
     align-items: flex-end;
     z-index: 200;
@@ -95,7 +95,7 @@
     flex-direction: column;
     gap: 3rem;
 }
-.about-txt h3{
+.about-txt h2{
     margin-bottom: 1rem;
 }
 .txt1{
@@ -123,10 +123,10 @@
     flex: 85;
 }
 .ch {
-    flex: 5;
+    /* flex: 5; */
     position: sticky;
     height: 100vh;
-    top:0;
+    top: 0;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -134,6 +134,7 @@
     justify-content: center;
     z-index: 100;
     white-space: nowrap;
+    width: 5rem;
 }
 .ch-count{
     font-size: 1.5rem;
@@ -173,8 +174,8 @@
     gap: 1rem;
     align-items: flex-start;
 }
-.education-wrap h3,
-.certifications-wrap h3{
+.education-wrap h2,
+.certifications-wrap h2{
     margin-bottom: 1rem;
     white-space: nowrap;
 }
@@ -267,9 +268,9 @@
      box-sizing: border-box; */
 }
 .popup-title{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
-.popup-title h3{
+.popup-title h2{
     margin-bottom: 3rem;
 }
 .popup-wrap {
@@ -278,12 +279,12 @@
     min-width: 0;
     /* width:80%; */
 }
-.popup-slide {
+.popup-slide, .poster-slide {
     width: 100%;
     /* max-width: 1435px; */
     margin: 0;
 }
-.swiper-backface-hidden .swiper-slide:after {
+.popup-slide .swiper-backface-hidden .swiper-slide:after {
     content: "";
     display: block;
     position: absolute;
@@ -343,10 +344,123 @@
 }
 .ch2 {
     color: #000;
-    flex: 3;
-    /* width: 20%; */
-    /* flex: initial; */
+    /* flex: 3; */
 }
+.poster {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+.poster-wrap {
+    background-color: #000;
+    color: #fff;
+    max-width: 1500px;
+    width: 80%;
+    padding: 6rem 3rem;
+}
+.poster-title{
+    margin-bottom: 4rem;
+}
+.poster-wrap-title h2{
+    margin-bottom: 3rem;
+}
+.poster-slide {
+    width: 100%;
+    /* max-width: 1435px; */
+    margin: 0;
+    border-top: 1px solid #fff;
+    /* margin-top: 2rem; */
+}
+.poster-slide .swiper-slide:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+.poster-slide-wrap:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #fff;
+}
+.poster-slide-wrap{
+    position: relative;
+    padding-left: 1rem;
+}
+.poster-wrap .swiper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.poster-slide-wrap h3{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.poster-slide-wrap h4{
+    margin-bottom: 0.5rem;
+}
+.poster-slide-wrap .popup-img{
+    margin-top: 1rem;
+}
+.popup-img img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.poster-img{
+    margin-top: 1rem;
+}
+.ch3 {
+    color: #fff;
+    /* flex: 3; */
+}
+.poster-wrap .ch3{
+    display: none;
+}
+.banner{
+    background-color: #FCFDF9;
+    padding-bottom: 6rem;
+}
+.banner .common-frame h2{
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.banner-wrap{
+    width: 94%;
+}
+.banner .banner-wrap>p{
+    text-align: center;
+}
+.banner-slide{
+    margin-top: 2rem;
+    width: 95%;
+    padding-right: 10%;
+}
+.banner-txt{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.banner-txt h4{
+    flex: 5;
+}
+.banner-txt p{
+    flex: 5;
+}
+.banner .common-frame{
+    display: flex;
+}
+/* @media (max-width:1790px){
+    .poster-wrap {
+    margin-right: 6%;
+} */
 @media (max-width:1430px){
     .ch{
         flex:7
@@ -354,4 +468,32 @@
     .ch2{
         flex: 4;
     }
+    .ch3{
+        flex: none;
+    }
+    .banner-txt h4{
+    flex: 4;
+    }
+    .banner-txt p{
+        flex: 6;
+    }
+    .banner-wrap {
+        width: 94%;
+    }
 }
+@media (max-width:1330px){
+    .poster-wrap {
+        /* margin-right: 5%; */
+        flex-grow: 1;
+    }
+}
+/* @media (max-width:1240px){
+    .poster-wrap {
+    margin-right: 4%;
+}
+}
+@media (max-width:1150px){
+    .poster-wrap {
+    margin-right: 3%;
+}
+} */

@@ -1,4 +1,4 @@
-@media (max-width:786px) {
+@media (max-width:768px) {
     .hero{
         width: 100vw;
         height: 70vh;
@@ -35,10 +35,12 @@
         width: 100%;
     }
     .ch {
-        flex: 0.4;
+        /* flex: 0.4; */
+        width: 30px;
         justify-content: flex-start;
         align-items: flex-end;
         padding-top: 82px;
+        height: auto;
     }
     .txt1{
     margin-left: 0;
@@ -134,6 +136,61 @@
     .ch2{
         height: auto;
     }
+    .poster {
+        display: flex;
+        margin-right: 0;
+        margin-top: 10%;
+        width: 100%;
+        position: relative;
+    }
+    .poster-wrap {
+        /* width: 100%; */
+        margin-right: 0;
+        display: flex;
+        padding: 6rem 1rem;
+    }
+    .poster-wrap .common-frame{
+        /* display: flex; */
+        /* width: 97%; */
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .poster-wrap2 {
+        width: 88%;
+        /* padding-right: 1rem; */
+        box-sizing: border-box;
+        min-height: 0;
+        height: auto;
+        flex: 1;
+        min-width: 0;
+    }
+    .poster-slide-wrap h3 {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .ch3 {
+        display: none;
+        margin-right: 0;
+    }
+    .poster-wrap .ch3 {
+        display: flex;
+    }
+    .banner{
+    margin-top: 10%;
+    }
+    .banner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+    .banners{
+        text-align: center;
+    }
+    .banner-wrap {
+    width: 96%;
+    /* flex: 8; */
+}
 }
 @media (max-width:450px){
     .skills-wrap ul {
@@ -156,5 +213,8 @@
     }
     .skills-wrap ul li h4 {
         margin-bottom: 2rem;
+    }
+    .poster-wrap .common-frame {
+    width: 89%;
     }
 }

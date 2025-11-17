@@ -40,7 +40,15 @@
     .certifications::before {
         flex: 2;
     }
-    .popup-wrap {
-    flex: 7;
+    .poster-wrap {
+        padding: 6rem 2rem;
+        margin-right: 0;
+        /* margin-right: 3%; */
     }
+    .ch3 {
+        flex: none;
+    }
+    .banner-wrap {
+    width: 87%;
+}
 }
