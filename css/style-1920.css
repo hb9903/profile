@@ -94,6 +94,8 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    position: relative;
+    z-index: 1;
 }
 .about-txt h2{
     margin-bottom: 1rem;
@@ -113,6 +115,7 @@
     position: absolute;
     top: 800px;
     left: 0;
+    z-index: 0;
 }
 .about figure img{
     width: 100%;
@@ -132,7 +135,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 150;
     white-space: nowrap;
     width: 5rem;
 }
@@ -156,7 +159,7 @@
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
 }
 .my-info div{
     display:  flex;
@@ -361,7 +364,7 @@
 .poster-title{
     margin-bottom: 4rem;
 }
-.poster-wrap-title h2{
+.poster-title h2{
     margin-bottom: 3rem;
 }
 .poster-slide {
@@ -432,8 +435,9 @@
     margin-bottom: 3rem;
     text-align: center;
 }
-.banner-wrap{
+.banner-wrap {
     width: 94%;
+    flex-grow: 0;
 }
 .banner .banner-wrap>p{
     text-align: center;
@@ -458,16 +462,19 @@
     display: flex;
 }
 .project{
-    margin-top: 10rem;
+    margin-top: 10%;
     padding-bottom: 6rem;
     background-color: #fff;
 }
-.project .common-frame h3{
+.project-wrap{
+    width: 100%;
+}
+.project-wrap h3{
     text-align: center;
     margin-bottom: 3rem;
     padding-top: 6rem;
 }
-.project .common-frame p{
+.project-wrap p{
     text-align: center;
 }
 .project-sticky-menu{
@@ -478,24 +485,28 @@
     top: 1rem;
     margin-top: 2rem;
     justify-content: center;
+    margin-bottom: 2rem;
+    
 }
 .project-sticky-menu a {
     display: block;
-    background-color: #fff;
-    padding: 1rem 2rem;
+    background-color: #000;
+    padding: 0.5rem 2rem;
     border: 1px solid #000;
     border-radius: 50px;
+    color: #FCFDF9;
 }
 .project-sticky-menu a:hover{
-    background-color: #000;
-    color: #fff;    
+    border: 1px solid #000;
+    background-color: #FCFDF9;
+    color: #000;    
 }
 /* @media (max-width:1790px){
     .poster-wrap {
     margin-right: 6%;
 } */
 @media (max-width:1430px){
-    .ch{
+    /* .ch{
         flex:7
     }
     .ch2{
@@ -503,7 +514,7 @@
     }
     .ch3{
         flex: none;
-    }
+    } */
     .banner-txt h4{
     flex: 4;
     }
