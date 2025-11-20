@@ -1,12 +1,79 @@
-.bg-vi{
+.btn-wrapper {
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1920px;
+    position: fixed;
+    height: auto;
+    top: 0;
+    left: 50%;
+    z-index: 10000;
+}
+.btn-menu{
+    position: absolute;
+    display: block;
+    /* position: fixed; */
+    top: 2rem;
+    right: calc(5.8% - 0.75rem);
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+    mix-blend-mode: difference;
+}
+.header-smart {
+    position: fixed;
+    background-color: #FCFDF9;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 10000000;
+    width: 15%;
+    overflow: auto;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in 0s;
+    opacity: 100%;
+    font-size: 18px;
+}
+.header-smart.on{
+    transform: translateX(0);
+}
+.header-smart ul{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.gnb li{
+    padding: 0.25rem;
+    border-bottom: none;
+}
+.gnb li:hover{
+    border-bottom: 1px solid #000;
+    transform: translateX(-30px);
+}
+.btn-menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-vi {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: fixed;
-    right: 0;
+    left: 50%;
     top: 0;
     z-index: -1;
-} 
+    max-width: 1920px;
+    transform: translateX(-50%);
+}
 .bg-vi video{
     width: 100%;
     height: 100%;
@@ -14,23 +81,27 @@
 }
 .hero {
     background-color: #FCFDF9;
-    height: 120vh;
-    width: 100%; /* 70vw에서 100%로 변경 */
-    max-width: 70vw;
+    height: 115vh;
+    width: 100%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    max-height: 953px;
 }
-.hero .sub-title{
+.hero .sub-title,
+.contact .sub-title{
     margin-top: 200px;
 }
-.hero-title{
+.hero-title,
+.contact-title{
     text-align: left;
     margin-right: 2rem;
-}
-.hero-title h1{
+}   
+.hero-title h1,
+.contact-title h1{
     font-size: 46px;
     line-height: 90%;
     margin-top: 0.5rem;
@@ -41,13 +112,15 @@
     margin-right: 2rem;
     width: 100%;
 }
-.hero figure {
+.hero figure,
+.contact figure {
     width: 800px;
     position: absolute;
     bottom: 200px;
     left: -6%;
 }
-.hero figure img{
+.hero figure img,
+.contact figure img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -56,19 +129,28 @@
     height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 50%;
     border-left: 2px solid #FCFDF9;
     color: #FCFDF9;
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     z-index: 200;
     mix-blend-mode: difference;
+    max-width: 1920px;
+    width: 100%;
+    /* margin: 0 auto; */
+    transform: translateX(-50%);
+    justify-content: flex-end;
 }
 .txt-r {
-    transform: rotate(90deg);
+    border-left: 1px solid rgba(255, 255, 255, 0.639);
+}
+.txt-r span {
+    transform: rotate(90deg)translateY(-6px)translateX(910px);
     margin-bottom: 110px;
     white-space: nowrap;
     margin-left: -47px;
+    display: inline-block;
 }
 .about-me{
     background-color: #000;
@@ -267,6 +349,7 @@
     margin-left: 20%;
     padding: 6rem 3rem 6rem 3rem;
     display:  flex;
+    min-height: 80vh;
      /* width: 80%;
      box-sizing: border-box; */
 }
@@ -278,7 +361,7 @@
 }
 .popup-wrap {
     flex: 34;
-    max-width: 1435px;
+    /* max-width: 1435px; */
     min-width: 0;
     /* width:80%; */
 }
@@ -348,16 +431,18 @@
 .ch2 {
     color: #000;
     /* flex: 3; */
+    height: auto;
 }
 .poster {
     display: flex;
     justify-content: space-between;
     margin-right: 3rem;
+    min-height: 80vh;
 }
 .poster-wrap {
     background-color: #000;
     color: #fff;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     width: 80%;
     padding: 6rem 3rem;
 }
@@ -422,6 +507,7 @@
 .ch3 {
     color: #fff;
     /* flex: 3; */
+    height: auto;
 }
 .poster-wrap .ch3{
     display: none;
@@ -483,10 +569,9 @@
     position: sticky;
     left: 0;
     top: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     justify-content: center;
     margin-bottom: 2rem;
-    
 }
 .project-sticky-menu a {
     display: block;
@@ -500,6 +585,41 @@
     border: 1px solid #000;
     background-color: #FCFDF9;
     color: #000;    
+}
+.project-img{
+    margin-right: auto;
+    margin-left: auto;
+}
+.project-img picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact {
+    background-color: #FCFDF9;
+    height: 115vh;
+    width: 100%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    max-height: 953px;
+}
+.contact-mail-phone{
+    text-align: right;
+    margin-top: 10rem;
+    margin-right: 2rem;
+}
+.contact-menu{
+    margin-top: 2rem;
+}
+.contact-menu li{
+    margin-top: 1rem;
+}
+.contact figure{
+    bottom: 76px;
 }
 /* @media (max-width:1790px){
     .poster-wrap {

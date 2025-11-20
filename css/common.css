@@ -1,3 +1,9 @@
+@media (min-width:2000px){
+    main{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
 :root{
     --main-color:#F2F2F2;
     --heading1: 1.6rem;
@@ -10,12 +16,6 @@
     --weight2: 400;
     --lnh120: 1.2;
     --lnh150: 1.5;
-}
-@media (max-width:2000px){
-    main{
-        max-width: 1920px;
-        margin: 0 auto;
-    }
 }
 .fnc{
     font-family: 'MaruBuri', sans-serif;
@@ -42,6 +42,7 @@ p{
 html{
     font-size: 20px;
     font-family: 'Pretendard', sans-serif;
+    scroll-behavior: smooth;
 }
 .common-frame{
     width: auto;

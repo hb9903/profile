@@ -15,6 +15,8 @@
     <!-- 파비콘 -->
     <link rel="icon" sizes="32x32" href="./img/profile-fabicon.png" type="image/png">
 
+    <!-- 헤더 -->
+    <script src="./js/header.js"></script>
     <!-- js -->
     <script src="./js/bbyong.js"></script>
     <script src="./js/observer.js"></script>
@@ -24,18 +26,41 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="btn-wrapper">
+        <div class="btn-menu">
+            <img src="./img/menu.svg" alt="메뉴 버튼">
+        </div>
+    </div>
+    <!-- <div class="common-frame">
+    </div> -->
+    <div class="header-smart">
+        <div class="close-btn">
+            <img src="./img/x.svg" alt="메뉴 닫기 버튼">
+        </div>
+        <ul class="gnb">
+            <li><a href="#hero">home</a></li>
+            <li><a href="#about-me">about me</a></li>
+            <li><a href="#skills">skill</a></li>
+            <li><a href="#popup">popups</a></li>
+            <li><a href="#poster">posters</a></li>
+            <li><a href="#banner">banners</a></li>
+            <li><a href="#project">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="./img/resume.jpg" target="_blank">resume</a></li>
+        </ul>
+    </div>
     <main>
         <div class="common-frame ">
             <div class="deco1">
-            <div class="txt-r">
-                <span>Keep scrolling</span>
+                <div class="txt-r">
+                    <span>Keep scrolling</span>
+                </div>
             </div>
-        </div>
         </div>
         <div class="bg-vi">
             <video src="./img/backgrond.mp4" autoplay muted loop playsinline></video>
         </div>
-        <div class="hero">
+        <div class="hero" id="hero">
             <div class="hero-title">
                 <p class="sub-title">웹 퍼블리셔 김혜빈</p>
                 <h1 class="fnc">Code that understands flow,<br>
@@ -46,7 +71,7 @@
                 <img src="./img/webpublisher_txt.svg" alt="webpublisher">
             </figure>
         </div>
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             <div class="common-frame about">
                 <div class="about-txt-wrap">
                     <div class="about-title">
@@ -200,7 +225,7 @@
                         </div>
                     </div>
 
-                    <div class="skills">
+                    <div class="skills" id="skills">
                         <h2 class="fnc">Skills & Language</h2>
                         <div class="skills-wrap">
                             <ul>
@@ -254,7 +279,7 @@
 
             </div>
         </div>
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup-wrap">
                 <div class="popup-title">
                     <h2 class="fnc">Popups</h2>
@@ -333,7 +358,7 @@
                 </div>
             </div>
         </div>
-        <div class="poster">
+        <div class="poster" id="poster">
             <div class="poster-wrap">
                 <div class="poster-wrap2">
                     <div class="poster-title">
@@ -404,7 +429,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner" id="banner">
             <div class="common-frame">
                 <div class="banner-wrap">
                     <h2 class="fnc">Banners</h2>
@@ -491,14 +516,14 @@
                 </div>
             </div>
         </div>
-        <div class="project">
+        <div class="project" id="project">
             <div class="project-wrap">
                     <h3>Responsive Web Project</h3>
                     <p>처음의 생각을 형태로 완성하기까지 모든 과정에 직접 참여하며 디자인의 방향을 스스로 만들어갔습니다.<br>반응형 디자인을 기반으로, 사용자가 어떤 화면에서든 일관된 분위기와 편안한 경험을 느낄 수 있도록 구성했습니다.</p>
                     <section class="project-frame">
                         <ul class="project-sticky-menu">
-                            <li><a href="" target="_blank">New Branding Web</a></li>
-                            <li><a href="" target="_blank">Figma</a></li>
+                            <li><a href="https://esteelauder.dothome.co.kr/" target="_blank">New Branding Web</a></li>
+                            <li><a href="https://www.figma.com/design/T4HpOzaPMUOpKdeeR0RJjR/%EC%97%90%EC%8A%A4%ED%8B%B0%EB%A1%9C%EB%8D%94-%EB%B9%84%EC%82%BC?node-id=0-1&t=QPtVjDGwusrp9vur-1" target="_blank">Figma</a></li>
                         </ul>
                         <figure class="project-img">
                             <picture>
@@ -509,8 +534,8 @@
                     </section>
                     <section class="project-frame">
                         <ul class="project-sticky-menu">
-                            <li><a href="" target="_blank">New Branding Web</a></li>
-                            <li><a href="" target="_blank">Figma</a></li>
+                            <li><a href="https://hebino.dothome.co.kr/" target="_blank">New Branding Web</a></li>
+                            <li><a href="https://www.figma.com/design/cQMFrQFK7Zot6JOgr6KKdH/Le-Petit-Four?node-id=8-10&t=fydoWUvFgXOYLzMJ-1" target="_blank">Figma</a></li>
                         </ul>
                         <figure class="project-img">
                             <picture>
@@ -520,6 +545,23 @@
                         </figure>
                     </section>
             </div>
+        </div>
+         <div class="contact" id="contact">
+            <div class="contact-title">
+                <p class="sub-title">웹 퍼블리셔 김혜빈</p>
+                <h1 class="fnc">Thank you for taking the <br>time to explore my work.</h1>
+            </div>
+            <p class="bottom-title">사용자를 이해하고, 팀과 잘 소통하는 퍼블리셔가 되고자 합니다.</p>
+            <div class="contact-mail-phone">
+                <h4 class="fnc">Contact me</h4>
+                <ul class="contact-menu fnc">
+                    <li><a href="mailto:bno23701@gamil.com">bno23701@gamil.com</a></li>
+                    <li><a href="tel:01051061351">010-5106-1351</a></li>
+                </ul>
+            </div>
+            <figure>
+                <img src="./img/webpublisher_txt.svg" alt="webpublisher">
+            </figure>
         </div>
         <script>
             var swiper = new Swiper(".popup-slide, .poster-slide", {
@@ -532,29 +574,29 @@
             },
             breakpoints: {
                 200: {
-                slidesPerView: 1.1,
-                spaceBetween: 7
+                    slidesPerView: 1.1,
+                    spaceBetween: 7
                 },
             // 화면이 320px 이상일 때
-            320: {
-                slidesPerView: 1.6,
-                spaceBetween: 14
-            },
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 14
+                },
             // 화면이 768px 이상일 때
-            768: {
-                slidesPerView: 2.2,
-                spaceBetween: 14
-            },
+                768: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 14
+                },
             // 화면이 1024px 이상일 때
-            1024: {
-                slidesPerView: 2.7,
-                spaceBetween: 80
-            },
+                1024: {
+                    slidesPerView: 2.7,
+                    spaceBetween: 80
+                },
             // 화면이 1440px 이상일 때
-            1440: {
-                slidesPerView: 2.5,
-                spaceBetween: 100
-            }
+                1440: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 100
+                }
             }
             });
             var swiper = new Swiper(".banner-slide", {
@@ -564,14 +606,14 @@
                     delay: 2500,
                     disableOnInteraction: false,
                 },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true,
+                // },
+                // navigation: {
+                //     nextEl: ".swiper-button-next",
+                //     prevEl: ".swiper-button-prev",
+                // },
                 // on: {
                 //     autoplayTimeLeft(s, time, progress) {
                 //     progressCircle.style.setProperty("--progress", 1 - progress);

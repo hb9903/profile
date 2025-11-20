@@ -1,11 +1,23 @@
 @media (max-width:1024px) {
-    .hero-title h1{
+    .header-smart {
+        width: 20%;
+    }
+    .header-smart{
+        font-size: 14px;
+    }
+    .btn-menu{
+        right: calc(9.5% - 0.75rem);
+    }
+    .hero-title h1,
+    .contact-title h1{
         font-size: 40px;
     }
-    .hero .sub-title {
+    .hero .sub-title,
+    .contact .sub-title {
         margin-top: 160px;
     }
-    .hero figure {
+    .hero figure,
+    .contact  figure{
         width: 550px;
     }
     .txt1{
