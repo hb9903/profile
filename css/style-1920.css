@@ -627,11 +627,11 @@
     position: relative;
     overflow: hidden;
     max-height: 953px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
 }
 .contact-mail-phone{
     text-align: right;
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-right: 2rem;
 }
 .contact-menu{
