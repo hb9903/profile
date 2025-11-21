@@ -13,7 +13,7 @@
     position: fixed;
     display: block;
     top: 2rem;
-    right: calc(5.8% - 0.75rem);
+    right: 88px;
     width: 1.5rem;
     height: 1.5rem;
     aspect-ratio: 1/1;
@@ -448,8 +448,7 @@
 }
 .ch2 {
     color: #000;
-    /* flex: 3; */
-    height: auto;
+    height: 100vh;
 }
 .poster {
     display: flex;
@@ -524,8 +523,7 @@
 }
 .ch3 {
     color: #fff;
-    /* flex: 3; */
-    height: auto;
+    height: 100vh;
 }
 .poster-wrap>.ch3{
     display: none;
@@ -651,20 +649,8 @@
 .project-detail h3{
     margin-bottom: 1rem;
 }
-/* @media (max-width:1790px){
-    .poster-wrap {
-    margin-right: 6%;
-} */
 @media (max-width:1430px){
-    /* .ch{
-        flex:7
-    }
-    .ch2{
-        flex: 4;
-    }
-    .ch3{
-        flex: none;
-    } */
+
     .banner-txt h4{
     flex: 4;
     }
@@ -677,17 +663,6 @@
 }
 @media (max-width:1330px){
     .poster-wrap {
-        /* margin-right: 5%; */
         flex-grow: 1;
     }
 }
-/* @media (max-width:1240px){
-    .poster-wrap {
-    margin-right: 4%;
-}
-}
-@media (max-width:1150px){
-    .poster-wrap {
-    margin-right: 3%;
-}
-} */

@@ -192,7 +192,7 @@
         margin-top: 1rem;
         margin-bottom: 3rem;
     }
-        .ch2,
+    .ch2,
     .ch3 {
         padding-top: 0;
         top: 120px;  /* 또는 100px, 130px 등 적절한 값 */
@@ -232,10 +232,6 @@
     .banner-wrap {
         width: calc(100% - 30px);
         /* flex: 8; */
-    }
-    .ch4{
-        color: #000;
-        padding-top: 6rem;
     }
     .project-title{
     margin-left: 0;
