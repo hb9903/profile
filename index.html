@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css?v=1">
     <link rel="stylesheet" href="./css/font.css?v=3">
     <link rel="stylesheet" href="./css/common.css?v=3">
-    <link rel="stylesheet" href="./css/style-1920.css?v=5">
-    <link rel="stylesheet" href="./css/style-1200.css?v=5">
-    <link rel="stylesheet" href="./css/style-768.css?v=5">
+    <link rel="stylesheet" href="./css/style-1920.css?v=7">
+    <link rel="stylesheet" href="./css/style-1200.css?v=7">
+    <link rel="stylesheet" href="./css/style-768.css?v=7">
     <link rel="stylesheet" href="./css/interaction.css?v=1">
     <!-- 파비콘 -->
     <link rel="icon" sizes="32x32" href="./img/profile-fabicon.png" type="image/png">
@@ -40,15 +40,15 @@
             <img src="./img/x.svg" alt="메뉴 닫기 버튼">
         </div>
         <ul class="gnb">
-            <li><a href="#hero">home</a></li>
-            <li><a href="#about-me">about me</a></li>
-            <li><a href="#skills">skill</a></li>
-            <li><a href="#popup">popups</a></li>
-            <li><a href="#poster">posters</a></li>
-            <li><a href="#banner">banners</a></li>
-            <li><a href="#project">projects</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="./img/resume.jpg" target="_blank">resume</a></li>
+            <li><a href="#hero" class="fnc">home</a></li>
+            <li><a href="#about-me"class="fnc">about me</a></li>
+            <li><a href="#skills" class="fnc">skill</a></li>
+            <li><a href="#popup" class="fnc">popups</a></li>
+            <li><a href="#poster" class="fnc">posters</a></li>
+            <li><a href="#banner" class="fnc">banners</a></li>
+            <li><a href="#project"class="fnc">projects</a></li>
+            <li><a href="#contact" class="fnc">contact</a></li>
+            <li><a href="./img/resume.jpg" target="_blank" class="fnc">resume</a></li>
         </ul>
     </div>
     <main>
@@ -369,7 +369,7 @@
                     </div>
                     <div class="swiper poster-slide">
                         <div class="swiper-wrapper">
-                        <div class="swiper poster-slide">
+                            <div class="swiper poster-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide1">
                                         <div class="poster-slide-wrap">
@@ -520,9 +520,15 @@
         </div>
         <div class="project" id="project">
             <div class="project-wrap">
-                <h3>Responsive Web Project</h3>
-                <p>처음의 생각을 형태로 완성하기까지 모든 과정에 직접 참여하며 디자인의 방향을 스스로 만들어갔습니다.<br>반응형 디자인을 기반으로, 사용자가 어떤 화면에서든 일관된 분위기와 편안한 경험을 느낄 수 있도록 구성했습니다.</p>
+                <div class="project-title">
+                    <h2 class="fnc">Responsive Web Project</h2>
+                    <p>처음의 생각을 형태로 완성하기까지 모든 과정에 직접 참여하며 디자인의 방향을 스스로 만들어갔습니다.<br>반응형 디자인을 기반으로, 사용자가 어떤 화면에서든 일관된 분위기와 편안한 경험을 느낄 수 있도록 구성했습니다.</p>
+                </div>
                 <section class="project-frame">
+                    <div class="project-detail">
+                        <h3 class="fnc">ESTEE LAUDER New Branding</h3>
+                        <p>팀원들과 함께 진행한 에스티 로더 웹사이트 리디자인 프로젝트입니다.<br>브랜드의 고급스러운 감성을 살리면서, 사용자가 편리하게 정보를 탐색하고 자연스럽게 브랜드를 경험할 수 있도록 디자인했습니다.<br>협업을 통해 아이디어를 공유하고, 사용자 중심의 시각적 개선에 집중한 프로젝트입니다.</p>
+                    </div>
                     <ul class="project-sticky-menu">
                         <li><a href="https://esteelauder.dothome.co.kr/" target="_blank">New Branding Web</a></li>
                         <li><a href="https://www.figma.com/design/T4HpOzaPMUOpKdeeR0RJjR/%EC%97%90%EC%8A%A4%ED%8B%B0%EB%A1%9C%EB%8D%94-%EB%B9%84%EC%82%BC?node-id=0-1&t=QPtVjDGwusrp9vur-1" target="_blank">Figma</a></li>
@@ -535,6 +541,10 @@
                     </figure>
                 </section>
                 <section class="project-frame">
+                    <div class="project-detail">
+                        <h3 class="fnc">Le Petit Four New Branding</h3>
+                        <p>Le Petit Four의 브랜드 감성을 웹으로 표현한 프로젝트입니다.<br>제품과 브랜드 스토리를 직관적이고 세련되게 전달하여, 사용자가 브랜드 경험을 자연스럽게 느낄 수 있도록 구성했습니다.<br>간결하면서도 기능적인 화면 배치와 시각적 균형을 고려하여, 브랜드의 전문성과 고급스러움을 강조했습니다</p>
+                    </div>
                     <ul class="project-sticky-menu">
                         <li><a href="https://hebino.dothome.co.kr/" target="_blank">New Branding Web</a></li>
                         <li><a href="https://www.figma.com/design/cQMFrQFK7Zot6JOgr6KKdH/Le-Petit-Four?node-id=8-10&t=fydoWUvFgXOYLzMJ-1" target="_blank">Figma</a></li>
@@ -608,20 +618,6 @@
                     delay: 2500,
                     disableOnInteraction: false,
                 },
-                // pagination: {
-                //     el: ".swiper-pagination",
-                //     clickable: true,
-                // },
-                // navigation: {
-                //     nextEl: ".swiper-button-next",
-                //     prevEl: ".swiper-button-prev",
-                // },
-                // on: {
-                //     autoplayTimeLeft(s, time, progress) {
-                //     progressCircle.style.setProperty("--progress", 1 - progress);
-                //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-                //     }
-                // }
                 });
         </script>
 

@@ -3,7 +3,7 @@
         width: 60%;
     }
     .btn-menu {
-        right: calc(3.5% - 0.75rem);
+        right: 1.2rem;
     }
     .hero, .contact {
         max-width: 100%;
@@ -29,11 +29,14 @@
     .contact .sub-title {
         margin-top: 120px;
     }
-    .hero figure,
-    .contact figure {
+    .hero figure, .contact figure {
         bottom: 55px;
-        width: 100%;
+        width: 68%;
     }
+    /* .contact figure {
+        bottom: 55px;
+        width: 68%;
+    } */
     .deco1{
         display: none;
     }
@@ -59,7 +62,7 @@
         right: 0;
         width: 30px;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: center;
         padding-top: 82px;
         height: auto;
         position: sticky
@@ -159,35 +162,29 @@
         flex: none;
         width: 20px;
     }
-    .ch2 {
-        height: auto;
-        padding: 0;
-    }
     .poster {
         display: flex;
         margin-right: 0;
         margin-top: 10%;
         width: 100%;
         position: relative;
+        min-height: 100vh;
     }
     .poster-wrap {
-        /* width: 100%; */
         margin-right: 0;
         display: flex;
         padding: 6rem 1rem;
+        align-items: flex-start;
+        min-height: 100vh;
     }
     .poster-wrap .common-frame{
-        /* display: flex; */
-        /* width: 97%; */
         justify-content: space-between;
         gap: 1rem;
     }
     .poster-wrap2 {
         width: 88%;
-        /* padding-right: 1rem; */
         box-sizing: border-box;
         min-height: 0;
-        height: auto;
         flex: 1;
         min-width: 0;
     }
@@ -195,13 +192,20 @@
         margin-top: 1rem;
         margin-bottom: 3rem;
     }
+        .ch2,
+    .ch3 {
+        padding-top: 0;
+        top: 120px;  /* 또는 100px, 130px 등 적절한 값 */
+    }
     .ch3 {
         display: none;
-        margin-right: 0;
-        padding: 0;
     }
-    .poster-wrap .ch3 {
+    .poster-wrap>.ch3 {
         display: flex;
+        height: auto;
+    }
+    .banner .common-frame {
+        align-items: flex-start;
     }
     .banner {
         margin-top: 10%;
@@ -226,18 +230,22 @@
         text-align: left;
     }
     .banner-wrap {
-        width: 96%;
+        width: calc(100% - 30px);
         /* flex: 8; */
     }
     .ch4{
         color: #000;
         padding-top: 6rem;
     }
-    .project-wrap2 h3,
+    .project-title{
+    margin-left: 0;
+    margin-right: 0;
+}
+    .project-wrap2 h2,
     .project-wrap2 p{
         text-align: left;
     }
-    .project-wrap h3{
+    .project-wrap h2{
         text-align: left;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -251,6 +259,18 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .project-detail {
+        text-align: left;
+        margin: 0;
+    }
+     .project-detail h3{
+        margin-top: 3rem;
+     }
+     .project-detail p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
 }
 @media (max-width:450px){
     .btn-menu {
@@ -263,8 +283,19 @@
         grid-template-columns: repeat(1,1fr);
     }
     .banner-wrap {
-    width: 93%;
-}
+        width: 93%;
+    }
+    .project-sticky-menu {
+        /* flex-direction: column; */
+        padding-top: 0.5rem;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    .project-sticky-menu a {
+        width: fit-content;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
 }
 @media (max-width:320px){
     .btn-menu {
@@ -276,7 +307,7 @@
     }
     .contact {
     margin-top: 10%;
-    height: 94vh;
+    height: 86vh;
 }
     .about-txt-wrap {
         flex: 3;

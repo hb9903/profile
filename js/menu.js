@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const btnMenu = document.querySelector('.btn-menu img');
-    const whiteSections = document.querySelectorAll('.hero, .about-me, .poster'); // 흰색 버튼이 필요한 섹션들
-
-    const observer = new IntersectionObserver((entries) => {
-        // 현재 버튼이 어느 섹션 위에 있는지 확인
+    
+    function updateButtonColor() {
         const btnRect = btnMenu.getBoundingClientRect();
+        const isMobile = window.innerWidth <= 768;
+        
+        // 768px 이하일 때는 hero를 제외, 초과일 때는 hero 포함
+        const whiteSections = isMobile 
+            ? document.querySelectorAll('.about-me, .poster')  // 모바일: hero 제외
+            : document.querySelectorAll('.hero, .about-me, .poster');  // PC: hero 포함
         
         const isOnWhiteSection = Array.from(whiteSections).some(section => {
             const rect = section.getBoundingClientRect();
@@ -16,25 +20,19 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             btnMenu.style.filter = 'invert(1)'; // 검은색
         }
+    }
+
+    const observer = new IntersectionObserver(() => {
+        updateButtonColor();
     }, { 
         threshold: [0, 0.1, 0.5, 0.9, 1]
     });
 
-    whiteSections.forEach(section => observer.observe(section));
-
-    // 스크롤 시에도 체크
-    window.addEventListener('scroll', () => {
-        const btnRect = btnMenu.getBoundingClientRect();
-        
-        const isOnWhiteSection = Array.from(whiteSections).some(section => {
-            const rect = section.getBoundingClientRect();
-            return rect.top <= btnRect.top && rect.bottom >= btnRect.bottom;
-        });
-
-        if (isOnWhiteSection) {
-            btnMenu.style.filter = 'invert(0)'; // 흰색
-        } else {
-            btnMenu.style.filter = 'invert(1)'; // 검은색
-        }
+    // 모든 가능한 섹션 observe
+    document.querySelectorAll('.hero, .about-me, .poster').forEach(section => {
+        observer.observe(section);
     });
+
+    window.addEventListener('scroll', updateButtonColor);
+    window.addEventListener('resize', updateButtonColor);
 });

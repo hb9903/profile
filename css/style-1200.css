@@ -8,6 +8,10 @@
     .btn-menu{
         right: calc(9.5% - 0.75rem);
     }
+    .gnb li:hover{
+        border-bottom: none;
+        transform: none;
+    }
     .hero-title h1,
     .contact-title h1{
         font-size: 40px;
@@ -62,5 +66,9 @@
     }
     .banner-wrap {
     width: 87%;
+}
+.project-title{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 }
