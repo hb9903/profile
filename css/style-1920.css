@@ -7,17 +7,23 @@
     top: 0;
     left: 50%;
     z-index: 10000;
+    /* mix-blend-mode: difference; */
 }
-.btn-menu{
-    position: absolute;
+.btn-menu {
+    position: fixed;
     display: block;
-    /* position: fixed; */
     top: 2rem;
     right: calc(5.8% - 0.75rem);
     width: 1.5rem;
     height: 1.5rem;
     aspect-ratio: 1/1;
-    mix-blend-mode: difference;
+    z-index: 10001;
+}
+.btn-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transition: opacity 0.3s ease; */
 }
 .header-smart {
     position: fixed;
@@ -57,11 +63,6 @@
 .gnb li:hover{
     border-bottom: 1px solid #000;
     transform: translateX(-30px);
-}
-.btn-menu img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .bg-vi {
     width: 100%;
@@ -146,7 +147,7 @@
     border-left: 1px solid rgba(255, 255, 255, 0.639);
 }
 .txt-r span {
-    transform: rotate(90deg)translateY(-6px)translateX(910px);
+    transform: rotate(90deg)translateY(-6px)translateX(780px);
     margin-bottom: 110px;
     white-space: nowrap;
     margin-left: -47px;
@@ -349,7 +350,8 @@
     margin-left: 20%;
     padding: 6rem 3rem 6rem 3rem;
     display:  flex;
-    min-height: 80vh;
+    min-height: 50vh;
+    /* min-height: 500px; */
      /* width: 80%;
      box-sizing: border-box; */
 }
@@ -437,7 +439,7 @@
     display: flex;
     justify-content: space-between;
     margin-right: 3rem;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 .poster-wrap {
     background-color: #000;
@@ -515,6 +517,7 @@
 .banner{
     background-color: #FCFDF9;
     padding-bottom: 6rem;
+    min-height: 50vh;
 }
 .banner .common-frame h2{
     padding-top: 6rem;
@@ -572,6 +575,7 @@
     margin-top: 4rem;
     justify-content: center;
     margin-bottom: 2rem;
+    z-index: 1000000;
 }
 .project-sticky-menu a {
     display: block;
@@ -585,6 +589,7 @@
     border: 1px solid #000;
     background-color: #FCFDF9;
     color: #000;    
+    z-index: 500;
 }
 .project-img{
     margin-right: auto;

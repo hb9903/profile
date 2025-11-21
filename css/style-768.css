@@ -136,6 +136,7 @@
         margin-top: 10%;
         padding: 6rem 1rem 6rem 1rem;
         align-items: flex-start;
+        min-height: auto;
     }
     .popup .popup-wrap{
         max-width: 95%;
