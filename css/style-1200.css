@@ -56,6 +56,10 @@
     .certifications::before {
         flex: 2;
     }
+    .popup-wrap {
+        flex: none;
+    width: 88%;
+}
     .poster-wrap {
         padding: 6rem 2rem;
         margin-right: 0;

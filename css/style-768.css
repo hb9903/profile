@@ -200,6 +200,9 @@
     .ch3 {
         display: none;
     }
+    .popup-wrap {
+        width: 100%;
+    }
     .poster-wrap>.ch3 {
         display: flex;
         height: auto;
