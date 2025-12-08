@@ -12,6 +12,9 @@
         border-bottom: none;
         transform: none;
     }
+    .hero {
+        max-width: 93.6%;
+    }
     .hero-title h1,
     .contact-title h1{
         font-size: 40px;
@@ -59,20 +62,26 @@
     .popup-wrap {
         flex: none;
     width: 88%;
-}
+    }
+    .poster {
+        max-width: 93.6%;
+    }
     .poster-wrap {
-        padding: 6rem 2rem;
-        margin-right: 0;
-        /* margin-right: 3%; */
+    padding: 6rem 0 6rem 2rem;
+    margin-right: 0;
+    /* margin-right: 3%; */
     }
     .ch3 {
         flex: none;
     }
     .banner-wrap {
     width: 87%;
-}
-.project-title{
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+    }
+    .project-title{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .contact {
+        max-width: 93.6%;
+    }
 }

@@ -100,7 +100,7 @@
     background-color: #FCFDF9;
     height: 115vh;
     width: 100%;
-    max-width: 70%;
+    max-width: 96%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -134,7 +134,7 @@
     width: 800px;
     position: absolute;
     bottom: 200px;
-    left: -6%;
+    left: 0;
 }
 .hero figure img,
 .contact figure img{
@@ -360,7 +360,7 @@
 }
 .popup{
     background-color: #FCFDF9;
-    margin-left: 20%;
+    margin-left: 6%;
     padding: 6rem 3rem 6rem 3rem;
     display:  flex;
     min-height: 50vh;
@@ -444,14 +444,18 @@
 .poster {
     display: flex;
     justify-content: space-between;
-    margin-right: 3rem;
     min-height: 60vh;
+    width: 100%;
+    max-width: 96%;
+    position: relative;
+    margin-right: 6rem;
+    background-color: #000;
 }
 .poster-wrap {
-    background-color: #000;
     color: #fff;
-    width: 80%;
-    padding: 6rem 3rem;
+    width: 100%;
+    padding: 6rem 0 6rem 3rem;
+    min-width: 0;
 }
 .poster-title{
     margin-bottom: 4rem;
@@ -605,7 +609,7 @@
 .contact {
     background-color: #FCFDF9;
     width: 100%;
-    max-width: 70%;
+    max-width: 96%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -637,7 +641,12 @@
     margin-bottom: 1rem;
 }
 @media (max-width:1430px){
-
+    .hero {
+        max-width: 94.6%;
+    }
+    .poster {
+        max-width: 94.7%;
+    }
     .banner-txt h4{
     flex: 4;
     }
@@ -646,6 +655,9 @@
     }
     .banner-wrap {
         width: 92%;
+    }
+    .contact {
+        max-width: 94.6%;
     }
 }
 @media (max-width:1330px){
